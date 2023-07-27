@@ -9,7 +9,7 @@ class Person {
     public string $name;
     public int $age;
     private ?float $salary;
-
+ 
     public function __construct($name, $age, $salary)
     {
         $this->name = $name;

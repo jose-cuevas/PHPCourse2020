@@ -8,6 +8,9 @@
 session_start();
 echo session_id();
 
+echo "<pre>";
+var_dump ($_SESSION);
+echo "</pre>";
 $_SESSION['page_count'] = $_SESSION['page_count'] ?? 0;
 $_SESSION['page_count']++;
 

@@ -21,10 +21,10 @@ $todos = json_decode(file_get_contents('./todos.json'), true);
   <br>
     <?php foreach ($todos as $todoName => $todo): ?>
       <div style="margin-bottom: 20px;">
-        <form style="display: inline" action="change_status.php" method="post">
+        <!-- <form style="display: inline" action="change_status.php" method="post">
           <input type="hidden" name="todo_name" value="<?php echo $todoName ?>">
           <input type="checkbox" name="status" value="1" <?php echo($todo['completed'] ? 'checked' : '') ?>>
-        </form>
+        </form> -->
           <?php echo $todoName ?>
         <form style="display: inline" action="delete.php" method="post">
           <input type="hidden" name="todo_name" value="<?php echo $todoName ?>">

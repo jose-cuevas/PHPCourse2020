@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /** @var Connection $connection */
 $connection = require_once 'pdo.php';

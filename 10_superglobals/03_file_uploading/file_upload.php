@@ -2,9 +2,9 @@
 
 // 1. Add enctype="multipart/form-data" to form
 // 2. var_dump $_FILES
-//echo '<pre>';
-//var_dump($_FILES);
-//echo '</pre>';
+// echo '<pre>';
+// var_dump($_FILES);
+// echo '</pre>';
 
 // 5. Create $errorMessage variable
 $errorMessage = '';
@@ -16,7 +16,7 @@ if (isset($_FILES['file'])) {
     $ext = strtolower($ext);
 
     // 4. Check if the file size is more than 5MB and show error
-    if ($_FILES['file']['size'] > 5 * 1024 * 2014) {
+    if ($_FILES['file']['size'] > 5 * 1024 * 1024) {
       $errorMessage = 'File size can not be more than 5MB';
       // 6. Display error message in HTML
     } elseif (!in_array($ext, ['jpg', 'png', 'jpeg', 'svg'])) { // 8.

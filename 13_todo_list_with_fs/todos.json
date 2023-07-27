@@ -10,5 +10,8 @@
     },
     "One more todo": {
         "completed": true
+    },
+    "": {
+        "completed": false
     }
 }
